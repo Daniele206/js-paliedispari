@@ -26,14 +26,21 @@
             <button id="pari-btn" class="btn btn-outline-light mx-2">
               Pari
             </button>
-            <button id="Dispari-btn" class="btn btn-outline-light mx-2">
+            <button id="dispari-btn" class="btn btn-outline-light mx-2">
               Dispari
             </button>
           </div>
         </div>
-        <div id="play-game" class="d-none">
+        <div id="play-game" class="d-none h-100 w-100 d-flex align-items-center justify-content-center flex-column">
           <h1 id="select-pari" class="fw-bold d-none">Hai scelto pari</h1>
           <h1 id="select-dispari" class="fw-bold d-none">Hai scelto dispari</h1>
+          <input id="number-input" class="my_input" type="text" placeholder="Inserisci un numero da 1 a 5">
+          <button id="play-number-btn" class="btn btn-outline-light mt-3">
+            Gioca il nuemro
+          </button>
+          <h2 id="error-num" class="my-3 d-none"></h2>
+          <h2 id="num-pc-output" class="my-3 d-none"></h2>
+          <h1 id="win" class="fw-bold d-none"></h1>
         </div>
       </div>
     </div>
