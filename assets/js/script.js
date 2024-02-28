@@ -28,7 +28,11 @@ const winOutput = document.getElementById('win');
 // Functions
 function paliTest(word){
   const wordSplit = word.split('');
-  const wordSplitreverse = wordSplit.reverse();
+  const wordSplitreverse = [];
+  // const wordSplitreverse = wordSplit.reverse();
+  for(let i = 0; i < wordSplit.length; i++){
+    wordSplitreverse.push(wordSplit[wordSplit.length -1 - i]);
+  }
   const wordReverse = (wordSplitreverse.join(''));
   if(word === ''){
     return 'Parola mancante "Inserire una parola palindorma"';
@@ -89,9 +93,7 @@ plaiBtn.addEventListener('click', function(){
   const wordTest = wordInput.value
   paliTest(wordTest);
   testWordOutput.innerHTML = paliTest(wordTest);
-
   palyGame(paliTest(wordTest));
-
   wordInput.value = '';
 });
 
@@ -120,6 +122,5 @@ playNumberBtn.addEventListener('click', function(){
   const numTest = parseInt(numInput.value);
   testWin(numTest);
   console.log(testWin(numTest));
-
   numInput.value = '';
 })
