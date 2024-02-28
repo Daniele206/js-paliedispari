@@ -1,0 +1,14 @@
+.mayn_wrapper{
+  height: 100vh;
+}
+
+.bg_green{
+  background-color: darkcyan;
+}
+
+.my_input{
+  width: 60%;
+  height: 10%;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
