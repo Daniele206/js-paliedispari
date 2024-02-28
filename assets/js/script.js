@@ -121,6 +121,5 @@ dispariBtn.addEventListener('click', function(){
 playNumberBtn.addEventListener('click', function(){
   const numTest = parseInt(numInput.value);
   testWin(numTest);
-  console.log(testWin(numTest));
   numInput.value = '';
 })
