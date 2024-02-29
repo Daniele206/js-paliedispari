@@ -29,14 +29,17 @@ const winOutput = document.getElementById('win');
 function paliTest(word){
   const wordSplit = word.split('');
   const wordSplitreverse = [];
+
   // const wordSplitreverse = wordSplit.reverse();
   for(let i = 0; i < wordSplit.length; i++){
     wordSplitreverse.push(wordSplit[wordSplit.length -1 - i]);
-  }
+  };
+
   const wordReverse = (wordSplitreverse.join(''));
+  
   if(word === ''){
     return 'Parola mancante "Inserire una parola palindorma"';
-  }else if(word === wordReverse){
+  }else if(word.toLowerCase() === wordReverse.toLowerCase()){
     return 'La parola é  palindorma';
   }else{
     return 'La parola non é palindroma';
